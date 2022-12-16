@@ -4,7 +4,7 @@
 <!--Head of code-->
 <head>
 <!--Title of the webpage-->
-<title>Lesson 2.12</title>
+<title>Lesson 2.13</title>
 <!--Favicon-->
 <link rel="shortcut icon" type="image/icon" href="image/favicon.ico">
 <!--CSS-->
@@ -27,6 +27,60 @@
     color: black;
     padding: 40px;
     text-align: center;}
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}  
 </style>
 <meta name="author" content="Jj">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,12 +88,16 @@
 <!-- Body of code-->
 <body style="background-color:powderblue;">
 <!--Next line is know the current lesson.-->
-<p title="Current Lesson"style="background-color:ghostwhite;">Lesson 2.12 - Head</p>
+<p title="Current Lesson"style="background-color:ghostwhite;">Lesson 2.13 - Layout</p>
 <hr> <!--Horizoontal line-->
 <!--Next line is the main heading showing the name of the subject.-->
+<header>
 <h1 id="myHeader">My Profile</h1>
+
 <!--The subject's section.-->
 <h2><strong>MI-211</strong></h2>
+</header>
+<section>
 <div class = "parts"; padding = "20px">
 <p><a href="#specialcode">Jump to code</a></p>
 <!--Subject's Info-->
@@ -53,17 +111,20 @@
     Highschool: Batangas College of Arts and Sciences
 </span>
 </div>
-<!--Current School info-->
-<p style="color:grey"; class="parts">Bachellor of Science in Information Technology with specialization in Mobile and Internet Technologies 
-   <br>Sophomore in <span style = "color:blue; font-weight: bolder;"; class="separate">Asia Pacific College</span></p>
 <!--Subject's school address-->
-<address>
+<article>
+    <address>
     3 Humabon,<br>
     Makati, <br>
     1232 <br>
     Metro Manila<br>
    Philippines</address>
 <img src="image/APClogo.png" width="150" height="150">
+</article>
+</section>
+<!--Current School info-->
+<p style="color:grey"; class="parts">Bachellor of Science in Information Technology with specialization in Mobile and Internet Technologies 
+   <br>Sophomore in <span style = "color:blue; font-weight: bolder;"; class="separate">Asia Pacific College</span></p>
 <br>
     <!--Subject's Instagram profile-->
 <a href="https://www.instagram.com/nathanseph02/" style="text-align:center;">Follow Him on Instagram @nathanseph02 <br></a>
