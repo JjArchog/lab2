@@ -4,7 +4,7 @@
 <!--Head of code-->
 <head>
 <!--Title of the webpage-->
-<title>Lesson 2.13</title>
+<title>Lesson 2.14</title>
 <!--Favicon-->
 <link rel="shortcut icon" type="image/icon" href="image/favicon.ico">
 <!--CSS-->
@@ -20,7 +20,6 @@
         text-align: center;}
     span {color: rgb(38, 0, 255);}
     pre {color: rgb(0, 38, 255);}
-    .parts {background-color: yellow;}
     .separate {background-color: red;}
     #myHeader {
     background-color: lightblue;
@@ -30,57 +29,45 @@
     * {
   box-sizing: border-box;
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
 }
 
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
 }
-
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
 }
-
-/* Style the navigation menu */
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-/* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}  
 </style>
 <meta name="author" content="Jj">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -88,17 +75,23 @@ footer {
 <!-- Body of code-->
 <body style="background-color:powderblue;">
 <!--Next line is know the current lesson.-->
-<p title="Current Lesson"style="background-color:ghostwhite;">Lesson 2.13 - Layout</p>
+<p title="Current Lesson"style="background-color:ghostwhite;">Lesson 2.14 - Responsive</p>
 <hr> <!--Horizoontal line-->
+<div style="background-color:#f1f1f1;padding:15px;">
 <!--Next line is the main heading showing the name of the subject.-->
-<header>
 <h1 id="myHeader">My Profile</h1>
-
 <!--The subject's section.-->
 <h2><strong>MI-211</strong></h2>
-</header>
-<section>
-<div class = "parts"; padding = "20px">
+</div>
+<div style="overflow:auto">
+    <div class="menu">
+      <div class="menuitem">About</div> 
+      <div class="menuitem">Education</div>
+      <div class="menuitem">Countries Visited</div>
+      <div class="menuitem">Picture</div>
+    </div>
+<br>
+<div class="main"; padding = "20px">
 <p><a href="#specialcode">Jump to code</a></p>
 <!--Subject's Info-->
 <pre style="font-size:120%;">About Him
@@ -111,8 +104,8 @@ footer {
     Highschool: Batangas College of Arts and Sciences
 </span>
 </div>
+<div class="right">
 <!--Subject's school address-->
-<article>
     <address>
     3 Humabon,<br>
     Makati, <br>
@@ -120,8 +113,7 @@ footer {
     Metro Manila<br>
    Philippines</address>
 <img src="image/APClogo.png" width="150" height="150">
-</article>
-</section>
+</div>
 <!--Current School info-->
 <p style="color:grey"; class="parts">Bachellor of Science in Information Technology with specialization in Mobile and Internet Technologies 
    <br>Sophomore in <span style = "color:blue; font-weight: bolder;"; class="separate">Asia Pacific College</span></p>
@@ -130,7 +122,7 @@ footer {
 <a href="https://www.instagram.com/nathanseph02/" style="text-align:center;">Follow Him on Instagram @nathanseph02 <br></a>
 <!--Subject's picture-->
 <p ><i>This is what he looks like.</i></p>
-<img src="Jj.jpg" alt="Jj's picture" width="120" height="150">
+<img src="Jj.jpg" alt="Jj's picture" style="width:50%;height: auto;">
 <!--Special code-->
 <p id="specialcode">Decipher the code:</p><bdo dir="rtl">Jj is so handsome and strong.</bdo>
 </body>
