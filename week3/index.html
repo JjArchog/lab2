@@ -4,7 +4,7 @@
 <!--Head of code-->
 <head>
 <!--Title of the webpage-->
-<title>Lesson 2.9</title>
+<title>Lesson 2.10</title>
 <!--Favicon-->
 <link rel="shortcut icon" type="image/icon" href="image/favicon.ico">
 <!--CSS-->
@@ -22,18 +22,24 @@
     pre {color: rgb(0, 38, 255);}
     .parts {background-color: yellow;}
     .separate {background-color: red;}
+    #myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;}
 </style>
 </head>
 <!-- Body of code-->
 <body style="background-color:powderblue;">
 <!--Next line is know the current lesson.-->
-<p title="Current Lesson"style="background-color:ghostwhite;">Lesson 2.9 - Classes</p>
+<p title="Current Lesson"style="background-color:ghostwhite;">Lesson 2.10 - ID</p>
 <hr> <!--Horizoontal line-->
 <!--Next line is the main heading showing the name of the subject.-->
-<h1>My Profile</h1>
+<h1 id="myHeader">My Profile</h1>
 <!--The subject's section.-->
 <h2><strong>MI-211</strong></h2>
 <div class = "parts"; padding = "20px">
+<p><a href="#specialcode">Jump to code</a></p>
 <!--Subject's Info-->
 <pre style="font-size:120%;">About Him
     Nickname: Jj
@@ -61,6 +67,6 @@
 <p ><i>This is what he looks like.</i></p>
 <img src="Jj.jpg" alt="Jj's picture" width="120" height="150">
 <!--Special code-->
-<p>Decipher the code:</p><bdo dir="rtl">Jj is so handsome and strong.</bdo>
+<p id="specialcode">Decipher the code:</p><bdo dir="rtl">Jj is so handsome and strong.</bdo>
 </body>
 </html>
