@@ -4,7 +4,7 @@
 <!--Head of code-->
 <head>
 <!--Title of the webpage-->
-<title>Lesson 2.8</title>
+<title>Lesson 2.9</title>
 <!--Favicon-->
 <link rel="shortcut icon" type="image/icon" href="image/favicon.ico">
 <!--CSS-->
@@ -18,20 +18,22 @@
     h2 {color: blue;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;}
-    span {color: aqua;}
-    pre {color: aqua;}
+    span {color: rgb(38, 0, 255);}
+    pre {color: rgb(0, 38, 255);}
+    .parts {background-color: yellow;}
+    .separate {background-color: red;}
 </style>
 </head>
 <!-- Body of code-->
 <body style="background-color:powderblue;">
 <!--Next line is know the current lesson.-->
-<p title="Current Lesson"style="background-color:ghostwhite;">Lesson 2.8 - Block and Inline</p>
+<p title="Current Lesson"style="background-color:ghostwhite;">Lesson 2.9 - Classes</p>
 <hr> <!--Horizoontal line-->
 <!--Next line is the main heading showing the name of the subject.-->
 <h1>My Profile</h1>
 <!--The subject's section.-->
 <h2><strong>MI-211</strong></h2>
-<div style="background-color:gray;padding: 20px;">
+<div class = "parts"; padding = "20px">
 <!--Subject's Info-->
 <pre style="font-size:120%;">About Him
     Nickname: Jj
@@ -39,13 +41,13 @@
     <!--Sports: basketball-->
     Favorite Quote: <q>Don't forget who your Father is</q> - Joseph Archog (His Dad)
 </pre>
-<span>Graduated:
+<span >Graduated:
     Highschool: Batangas College of Arts and Sciences
 </span>
 </div>
 <!--Current School info-->
-<p style="color:grey" >Bachellor of Science in Information Technology with specialization in Mobile and Internet Technologies 
-   <br>Sophomore in <span style = "color:blue; font-weight: bolder;">Asia Pacific College</span></p>
+<p style="color:grey"; class="parts">Bachellor of Science in Information Technology with specialization in Mobile and Internet Technologies 
+   <br>Sophomore in <span style = "color:blue; font-weight: bolder;"; class="separate">Asia Pacific College</span></p>
 <!--Subject's school address-->
 <address>
     3 Humabon,<br>
