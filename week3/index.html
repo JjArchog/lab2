@@ -18,13 +18,12 @@
     h2 {color: blue;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;}
-    span {color: rgb(38, 0, 255);}
     pre {color: rgb(0, 38, 255);}
     .separate {background-color: red;}
     #myHeader {
     background-color: lightblue;
     color: black;
-    padding: 40px;
+    padding: 0px;
     text-align: center;}
     * {
   box-sizing: border-box;
@@ -80,7 +79,7 @@
 <p title="Current Lesson"style="background-color:ghostwhite;">Lesson 2.21 - HTML vs XHTML</p>
 <hr> <!--Horizoontal line-->
 
-<div style="background-color:#f1f1f1;padding:15px;">
+<div>
 <!--Next line is the main heading showing the name of the subject.-->
 <h1 id="myHeader">My Profile</h1>
 <!--The subject's section.-->
@@ -89,52 +88,58 @@
 </div>
 <div style="overflow:auto">
     <div class="menu">
-      <div class="menuitem">About</div> 
-      <div class="menuitem">Education</div>
-      <div class="menuitem">Countries Visited</div>
-      <div class="menuitem">Picture</div>
+      <div class="menuitem"><a href="#About">About</a></div> 
+      <div class="menuitem"><a href="#Educ">Education</a></div>
+      <div class="menuitem"><a href="#Hobbies">Hobbies</a></div>
+      <div class="menuitem"><a href="#Goals">Goals</a></div>
     </div>
 <br>  
 
 <div class="main"; padding = "20px">
-<p><a href="#specialcode">Jump to code</a></p>
 <!--Subject's Info-->
-<pre style="font-size:120%;">About Him
+<pre style="font-size:120%;" id ="About">
+  <b>About</b>
     Nickname: Jj
     Age: 20
-    <!--Sports: basketball-->
-    Favorite Quote: <q>Don't forget who your Father is</q> - Joseph Archog (His Dad)
     &#128222;: 09XXXXXXXXX
 </pre>
-<span >Graduated:
-    Highschool: Batangas College of Arts and Sciences
-</span>
+
+<pre style="font-size:120%;" id ="Educ">
+<b>Education:</b>
+    Graduated Highschool: Batangas College of Arts and Sciences at Lipa City, Batangas
+    Course: Bachelor of Science in Information Technology 
+                with specialization in Mobile and Internet Technologies
+    Scholarship: 60% off from APC-AFPLOC
+                (Armed Forces of the Philippines Ladies Officers Club) Scholarship
+    Transferee / Second Course?:-No
+    Did you choose this course? -Yes
+    Why Yes?-Now in the transformation age where we are adapting more to technology,
+    IT professionals are now in demand, and I wanted a job 
+            that would always be needed like this growing industry.
+    If No, what course would you choose?
+    I.T. Experience: Programming / Gaming / Others
+                  -Little bit of Programming
+</pre>
+
+<pre style="font-size:120%;" id ="Hobbies">
+<b>Hobbies/Interests:</b>
+    -Basketball
+    -Firing
+    -Military
+    -Martial Arts
+</pre>
+
+<pre style="font-size:120%;" id ="Goals">
+<b>Goals:</b>
+    -Live a Godly, blessed, happylife
+    -Join themilitary
+</pre>
 </div>
 
 <div class="right">
-<!--Subject's school address-->
-    <address>
-    3 Humabon,<br>
-    Makati, <br>
-    1232 <br>
-    Metro Manila<br>
-   Philippines</address>
-<img src="image/APClogo.png" width="150" height="150">
+  <img src="Jj.jpg" alt="Jj's picture" style="width:50%;height: auto;">
 </div>
 <br>
-<!--Current School info-->
-<p style="color:grey"; class="parts">Bachellor of Science in Information Technology with specialization in Mobile and Internet Technologies 
-   <br>Sophomore in <span style = "color:blue; font-weight: bolder;"; class="separate">Asia Pacific College</span></p>
-<br>
 
-    <!--Subject's Instagram profile-->
-<a href="https://www.instagram.com/nathanseph02/" style="text-align:center;">Follow Him on Instagram @nathanseph02 <br></a>
-<!--Subject's picture-->
-<p ><i>This is what he looks like.</i></p>
-<img src="Jj.jpg" alt="Jj's picture" style="width:50%;height: auto;">
-
-<!--Special code-->
-<p id="specialcode">Decipher the code:</p><bdo dir="rtl">Jj is so handsome and strong.</bdo>
-<p style="font-size:smaller ;">Copyright &COPY; 2022 by Jonathan Joseph B. Archog</p>
 </body>
 </html>
