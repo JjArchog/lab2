@@ -4,62 +4,54 @@
 <!--Head of code-->
 <head>
 <!--Title of the webpage-->
-<title>Lesson 2.21</title>
+<title>CSS Lesson 1.6</title>
 <!--Favicon-->
 <link rel="shortcut icon" type="image/icon" href="image/favicon.ico">
 <!--CSS-->
 <style>
     body {background-color: powderblue;}
     h1   {color: blue;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 300%;
-        text-align: center;
-        border: 2px solid black;}
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 300%;
+          text-align: center;
+          border: 2px solid black;}
     h2 {color: blue;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-align: center;}
-    pre {color: rgb(0, 38, 255);}
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          text-align: center;}
+    pre {color: rgb(0, 38, 255);
+          font-size: 120%;}
     .separate {background-color: red;}
-    #myHeader {
-    background-color: lightblue;
-    color: black;
-    padding: 0px;
-    text-align: center;}
-    * {
-  box-sizing: border-box;
-}
-.menu {
-  float: left;
-  width: 20%;
-}
-.menuitem {
-  padding: 8px;
-  margin-top: 7px;
-  border-bottom: 1px solid #f1f1f1;
-}
-.main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  overflow: hidden;
-}
-.right {
-  background-color: lightblue;
-  float: left;
-  width: 20%;
-  padding: 10px 15px;
-  margin-top: 7px;
-}
+    #myHeader {background-color: lightblue;
+          color: black;
+          padding: 0px;
+          text-align: center;}
+    * {box-sizing: border-box;}
+    .menu {
+          float: left;
+          width: 20%;}
+    .menuitem {
+          padding: 8px;
+          margin-top: 7px;
+          border-bottom: 1px solid #f1f1f1;}
+    .main {
+          float: left;
+          width: 60%;
+          padding: 0 20px;
+          overflow: hidden;}
+    .right {
+          background-color: lightblue;
+          float: left;
+          width: 20%;
+          padding: 10px 15px;
+          margin-top: 7px;}
 
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
+    @media only screen and (max-width:800px) {
+      /* For tablets: */
+    .main {
+          width: 80%;
+          padding: 0;}
+    .right {
+          width: 100%;}
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
@@ -73,10 +65,10 @@
 <meta charset="UTF-8">
 </head>
 <!-- Body of code-->
-<body style="background-color:powderblue;">
+<body>
 
 <!--Next line is know the current lesson.-->
-<p title="Current Lesson"style="background-color:ghostwhite;">Lesson 2.21 - HTML vs XHTML</p>
+<p title="Current Lesson"style="background-color:ghostwhite;">CSS Lesson 1.1 - Introductions</p>
 <hr> <!--Horizoontal line-->
 
 <div>
@@ -97,14 +89,14 @@
 
 <div class="main"; padding = "20px">
 <!--Subject's Info-->
-<pre style="font-size:120%;" id ="About">
+<pre id ="About">
   <b>About</b>
     Nickname: Jj
     Age: 20
     &#128222;: 09XXXXXXXXX
 </pre>
 
-<pre style="font-size:120%;" id ="Educ">
+<pre id ="Educ">
 <b>Education:</b>
     Graduated Highschool: Batangas College of Arts and Sciences at Lipa City, Batangas
     Course: Bachelor of Science in Information Technology 
@@ -121,7 +113,7 @@
                   -Little bit of Programming
 </pre>
 
-<pre style="font-size:120%;" id ="Hobbies">
+<pre id ="Hobbies">
 <b>Hobbies/Interests:</b>
     -Basketball
     -Firing
@@ -129,7 +121,7 @@
     -Martial Arts
 </pre>
 
-<pre style="font-size:120%;" id ="Goals">
+<pre id ="Goals">
 <b>Goals:</b>
     -Live a Godly, blessed, happylife
     -Join themilitary
