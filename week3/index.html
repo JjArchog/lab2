@@ -3,10 +3,10 @@
 <html lang="en-US">
 <!--Head of code-->
 <head>
-<!--Title of the webpage-->
-<title>CSS Lesson 8</title>
-<!--Favicon-->
-<link rel="shortcut icon" type="image/icon" href="image/favicon.ico">
+      <!--Title of the webpage-->
+      <title>CSS Lesson 9</title>
+      <!--Favicon-->
+      <link rel="shortcut icon" type="image/icon" href="image/favicon.ico">
 <!--CSS-->
 <style>
       body {background-image: url("image/background.png");
@@ -34,8 +34,10 @@
     h2 {color: blue;
           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           text-align: center;}
+      #mainmenu {text-decoration: none;}
     pre {color: rgb(0, 38, 255);
           font-size: 120%;
+          font-family: 'Times New Roman', Times, serif;
           }
     .separate {background-color: red;}
     
@@ -66,13 +68,13 @@
           padding: 0;}
     .right {
           width: 100%;}
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
+      }
+      @media only screen and (max-width:500px) {
+      /* For mobile phones: */
+            .menu, .main, .right {
+                  width: 100%;
+            }
+      }
 </style>
 <meta name="author" content="Jj">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +84,7 @@
 <body>
 
 <!--Next line is know the current lesson.-->
-<p title="Current Lesson"style="background-color:ghostwhite;">CSS Lesson 8 - Text</p>
+<p title="Current Lesson"style="background-color:ghostwhite;">CSS Lesson 9 - Font</p>
 <hr> <!--Horizoontal line-->
 
 <div>
@@ -93,7 +95,7 @@
 
 </div>
 <div style="overflow:auto">
-    <div class="menu">
+    <div class="menu"; id="mainmenu">
       <div class="menuitem"><a href="#About">About</a></div> 
       <div class="menuitem"><a href="#Educ">Education</a></div>
       <div class="menuitem"><a href="#Hobbies">Hobbies</a></div>
