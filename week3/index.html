@@ -4,7 +4,7 @@
 <!--Head of code-->
 <head>
       <!--Title of the webpage-->
-      <title>CSS Lesson 12</title>
+      <title>CSS Lesson 13</title>
       <!--Favicon-->
       <link rel="shortcut icon" type="image/icon" href="image/favicon.ico">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,7 +43,7 @@
       .fa {
             padding: 20px;
             font-size: 30px;
-            width: 80px;
+            width: 70px;
             text-align: center;
             text-decoration: none;
             margin: 5px 2px;
@@ -105,6 +105,19 @@
                   width: 100%;
             }
       }
+            
+      table {
+      border-collapse: collapse;
+      width: 100%;
+      }
+
+      th, td {
+      text-align: left;
+      padding: 8px;
+      }
+
+      tr:nth-child(even) {background-color: #f2f2f2;}
+      tr:nth-child(odd) {background-color: #aaa9a9;}
 </style>
 <meta name="author" content="Jj">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -114,7 +127,7 @@
 <body>
 
 <!--Next line is know the current lesson.-->
-<p title="Current Lesson"style="background-color:ghostwhite;">CSS Lesson 12 - Lists</p>
+<p title="Current Lesson"style="background-color:ghostwhite;">CSS Lesson 13 - Tables</p>
 <hr> <!--Horizoontal line-->
 
 <div>
@@ -183,6 +196,27 @@
   <img src="Jj.jpg" alt="Jj's picture" style="width:50%;height: auto;">
 </div>
 <br>
-
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Adam</td>
+          <td>Johnson</td>
+          <td>10</td>
+        </tr>
+      </table>
 </body>
 </html>
