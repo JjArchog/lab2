@@ -4,9 +4,11 @@
 <!--Head of code-->
 <head>
       <!--Title of the webpage-->
-      <title>CSS Lesson 9</title>
+      <title>CSS Lesson 10</title>
       <!--Favicon-->
       <link rel="shortcut icon" type="image/icon" href="image/favicon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--CSS-->
 <style>
       body {background-image: url("image/background.png");
@@ -34,11 +36,37 @@
     h2 {color: blue;
           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           text-align: center;}
-      #mainmenu {text-decoration: none;}
     pre {color: rgb(0, 38, 255);
           font-size: 120%;
           font-family: 'Times New Roman', Times, serif;
           }
+      .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 80px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 30%;
+            }
+
+      .fa:hover {
+            opacity: 0.7;
+            }
+
+      .fa-facebook {
+            background: #3B5998;
+            color: white;
+            }
+      .fa-instagram {
+                  background: #125688;
+                  color: white;
+                  }
+      .fa-youtube {
+            background: #bb0000;
+            color: white;
+            }      
+
     .separate {background-color: red;}
     
     * {box-sizing: border-box;}
@@ -84,7 +112,7 @@
 <body>
 
 <!--Next line is know the current lesson.-->
-<p title="Current Lesson"style="background-color:ghostwhite;">CSS Lesson 9 - Font</p>
+<p title="Current Lesson"style="background-color:ghostwhite;">CSS Lesson 10 - Icons</p>
 <hr> <!--Horizoontal line-->
 
 <div>
@@ -95,7 +123,7 @@
 
 </div>
 <div style="overflow:auto">
-    <div class="menu"; id="mainmenu">
+    <div class="menu">
       <div class="menuitem"><a href="#About">About</a></div> 
       <div class="menuitem"><a href="#Educ">Education</a></div>
       <div class="menuitem"><a href="#Hobbies">Hobbies</a></div>
@@ -129,6 +157,9 @@
                   -Little bit of Programming
 </pre>
 
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-youtube"></a>
 <pre id ="Hobbies">
 <b>Hobbies/Interests:</b>
     -Basketball
