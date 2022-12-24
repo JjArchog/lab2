@@ -4,21 +4,23 @@
 <!--Head of code-->
 <head>
       <!--Title of the webpage-->
-      <title>CSS Lesson 18</title>
+      <title>CSS Lesson 19</title>
       <!--Favicon-->
       <link rel="shortcut icon" type="image/icon" href="image/favicon.ico">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--CSS-->
 <style>
+
       body {background-image: url("image/background.png");
-          background-repeat: no-repeat;
-          background-position-x: 50%;
-          background-position-y: 8%;
-          background-size: 40%;
-          background-color: aqua;
-          border-radius: 10%;
-          padding: 5px;}
+            background-repeat: no-repeat;
+            background-position-x: 50%;
+            background-position-y: 8%;
+            background-size: 50%;
+            background-color: aqua;
+            border-radius: 10%;
+            padding: 5px;
+            margin:0}
       #myHeader {background-color:rgba(34, 208, 208, 0.2);
           color: white;
           text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
@@ -31,7 +33,7 @@
           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           font-size: 300%;
           text-align: center;
-          margin-top: 20%;
+          margin-top: 1%;
       }     
     h2 {color: blue;
           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -65,26 +67,27 @@
       .fa-youtube {
             background: #bb0000;
             color: white;
-            }      
+            }     
       ul {
-            list-style-type: square;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
             }
+      ol {list-style-type: circle ;}
     .separate {background-color: red;}
     
     * {box-sizing: border-box;}
-    .menu {
-          float: left;
-          width: 20%;}
-    .menuitem {
-          padding: 8px;
-          margin-top: 7px;
-          border-bottom: 1px solid #f1f1f1;}
     .main {
           float: left;
           width: 60%;
           padding: 0 20px;
           overflow: hidden;}
-    .right {
+    .left {
           background-color:rgb(196, 201, 201);
           float: left;
           width: 20%;
@@ -96,12 +99,12 @@
     .main {
           width: 80%;
           padding: 0;}
-    .right {
+    .left {
           width: 100%;}
       }
       @media only screen and (max-width:500px) {
       /* For mobile phones: */
-            .menu, .main, .right {
+            .menu, .main, .left {
                   width: 100%;
             }
       }
@@ -139,6 +142,29 @@
             width: 43px;
             background: url("image/img_navsprites_hover.gif") -91px 0;
       }
+      li {
+            float: left;
+      }
+
+      li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+      }
+
+      li a:hover {
+            background-color: #111;
+      }
+
+      img {
+            width: 10%;
+            height: auto;
+            margin-top: 15%;
+            margin-left: 20%;
+            border: 5px solid #555;
+      }
 </style>
 <meta name="author" content="Jj">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -148,8 +174,8 @@
 <body>
 
 <!--Next line is know the current lesson.-->
-<p title="Current Lesson"style="background-color:ghostwhite;">CSS Lesson 18 - Properties</p>
-<hr> <!--Horizoontal line-->
+
+  <img src="Jj.jpg" alt="Jj's picture">
 
 <div>
 <!--Next line is the main heading showing the name of the subject.-->
@@ -158,18 +184,13 @@
 <h2><strong>MI-211</strong></h2>
 
 </div>
-<ul id="navlist">
-      <li id="home"><a href="default.asp"></a></li>
-      <li id="prev"><a href="css_intro.asp"></a></li>
-      <li id="next"><a href="css_syntax.asp"></a></li>
+
+<ul>
+  <li><a class="active" href="#About">About</a></li>
+  <li><a href="#Educ">Education</a></li>
+  <li><a href="#Hobbies">Hobbies</a></li>
+  <li><a href="#Goals">Goals</a></li>
 </ul>
-<div style="overflow:auto">
-    <div class="menu">
-      <div class="menuitem"><a href="#About">About</a></div> 
-      <div class="menuitem"><a href="#Educ">Education</a></div>
-      <div class="menuitem"><a href="#Hobbies">Hobbies</a></div>
-      <div class="menuitem"><a href="#Goals">Goals</a></div>
-    </div>
 <br>  
 
 <div class="main"; padding = "20px">
@@ -187,7 +208,7 @@
 
 <pre id ="Educ">
 <b>Education:</b>
-    <ul>
+    <ol>
 <li>Graduated Highschool: Batangas College of Arts and Sciences at Lipa City, Batangas</li>
 <li>Course: Bachelor of Science in Information Technology 
                 with specialization in Mobile and Internet Technologies</li>
@@ -201,7 +222,7 @@
     If No, what course would you choose?</li>
 <li>I.T. Experience: Programming / Gaming / Others
                   -Little bit of Programming</li>
-</pre></ul>
+</pre></ol>
 
 <pre id ="Hobbies">
 <b>Hobbies/Interests:</b>
@@ -216,10 +237,6 @@
     -Live a Godly, blessed, happylife
     -Join themilitary
 </pre>
-</div>
-
-<div class="right">
-  <img src="Jj.jpg" alt="Jj's picture" style="width:50%;height: auto;">
 </div>
 <br> 
 </body>
